@@ -1,18 +1,16 @@
 body{
 	background-color:LightGray;
-	//font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-	font-family:Whitney;
-;
+	font-family: 'Roboto Condensed', sans-serif;
 	font-variant: normal;
 	font-weight: 500;
 }
 h1 {
 	font-size: 48px;
-	line-height: 12px;
+	margin: 0px 60px;
 }
 h4 {
 	font-size: 20px;
-
+	margin:0px 60px;
 }
 h5 {
 	font-size: 19px;
@@ -29,15 +27,18 @@ p {
 	display:inline-block;
 }
 
+.header_area{
+	background:black;
+	border-color: white;
+	color:white;
+}
 
 .border{
 	max-width: 1280px;
-	text-align: center;
 	margin: auto;
 	border-style: solid;
 	border-width: 1px;
 	background-color:white;
-	padding:20px;
 }
 #language_box{
 	width:900px;
@@ -47,13 +48,14 @@ p {
 	border-width: 0.5px;
 	border-color:Gray;
 	padding: 4px;
+	color:white;
 	
 }
 
 #content_box{
 	width:900px;
 	margin:auto;
-	padding: 4px;;
+	padding: 4px;
 }
 
 #inline1{
@@ -63,16 +65,20 @@ p {
 
 .circleBase {
     border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    behavior: url(PIE.htc);
     text-align: center;
     display:inline-block;
 }
 
+.circleBase:hover{
+	background-color: SlateBlue;
+}
+
 .type1 {
-    width: 85px;
-    height: 85px;
+    width: 70px;
+    height: 70px;
     border: 1px solid ;
-    line-height: 85px;
+    line-height: 70px;
     margin: 2px;
 }
 .type2 {
@@ -93,14 +99,13 @@ p {
 	width:150px;
 	border-style: solid;
 	border-width: 1px;
-	border-color:black;
 	padding: 7px;
 	margin:7px 1px;
 }
 
 #box{
 	display:inline-block;
-	background-color:SlateGray ;
+	background-color:SlateGray;
 	border-style: solid;
 	border-width: 1px;
 	border-color:black;
@@ -110,7 +115,7 @@ p {
 	font-weight: 100;
 }
 
-#box:hover{
+#box2:hover{
 	background-color: SlateBlue;
 }
 
