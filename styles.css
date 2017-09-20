@@ -1,7 +1,8 @@
 body{
 	background-color:LightGray;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-style: normal;
+	//font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-family:Whitney;
+;
 	font-variant: normal;
 	font-weight: 500;
 }
@@ -57,7 +58,44 @@ p {
 
 #inline1{
 	display:inline-block;
-	text-align:left;
+	vertical-align: top;
+}
+
+.circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    text-align: center;
+    display:inline-block;
+}
+
+.type1 {
+    width: 85px;
+    height: 85px;
+    border: 1px solid ;
+    line-height: 85px;
+    margin: 2px;
+}
+.type2 {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border: 3px solid #000;
+}
+.type3 {
+    width: 500px;
+    height: 500px;
+    background: aqua;
+    border: 30px solid blue;
+}
+
+#box2{
+	display:inline-block;
+	width:150px;
+	border-style: solid;
+	border-width: 1px;
+	border-color:black;
+	padding: 7px;
+	margin:7px 1px;
 }
 
 #box{
