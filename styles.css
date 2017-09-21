@@ -12,13 +12,6 @@ h1 {
 h2 {
 	font-size: 30px;
 	margin: -5px 3px -15px;
-	text-align: left;
-	font-weight:100;
-}
-h2-s {
-	font-size: 20px;
-	margin: -5px 3px -15px;
-	text-align: left;
 	font-weight:100;
 }
 h3 {
@@ -69,6 +62,7 @@ p {
 #inline1{
 	display:inline-block;
 	vertical-align:top;
+	margin: 0px 15px;
 }
 
 .circleBase {
@@ -88,7 +82,9 @@ p {
     border: 1px solid ;
     line-height: 70px;
     margin: 2px;
-    border-color: gray;
+    border-color: black;
+    color:white;
+    background:#8c8c8c;
 }
 .type2 {
     width: 50px;
@@ -110,7 +106,9 @@ p {
 	border-width: 1px;
 	padding: 7px;
 	margin:7px 1px;
-	border-color:gray;
+	border-color:black;
+	color:white;
+	background:#8c8c8c;
 }
 
 #box{
