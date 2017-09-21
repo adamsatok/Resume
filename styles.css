@@ -4,13 +4,29 @@ body{
 	font-variant: normal;
 	font-weight: 100;
 }
+
 h1 {
 	font-size: 48px;
-	margin: 0px 60px;
+	margin:30px 60px 0px;
 }
-h4 {
+h2 {
+	font-size: 30px;
+	margin: -5px 3px -15px;
+	text-align: left;
+	font-weight:100;
+}
+h2-s {
+	font-size: 20px;
+	margin: -5px 3px -15px;
+	text-align: left;
+	font-weight:100;
+}
+h3 {
 	font-size: 20px;
 	margin:0px 60px;
+}
+h4 {
+	font-size: 28px;
 }
 h5 {
 	font-size: 19px;
@@ -26,9 +42,7 @@ p {
 }
 
 .header_area{
-	background:black;
-	border-color: white;
-	color:white;
+	margin: 10px auto 0px;
 }
 
 .border{
@@ -42,35 +56,30 @@ p {
 	width:900px;
 	margin:auto;
 	text-align:center;
-	border-style: solid;
-	border-width: 0.5px;
-	border-color:Gray;
-	padding: 4px;
-	color:white;
-	
+	padding: 4px;	
 }
 
 #content_box{
-	width:900px;
+	width:90%;
 	margin:auto;
-	padding: 4px;
-	font-weight: 400;
+	padding:10px 0 20px;
+	font-weight:400;
 }
 
 #inline1{
 	display:inline-block;
-	vertical-align: top;
+	vertical-align:top;
 }
 
 .circleBase {
     border-radius: 50%;
-    behavior: url(PIE.htc);
-    text-align: center;
+    behavior:url(PIE.htc);
+    text-align:center;
     display:inline-block;
 }
 
 .circleBase:hover{
-	background-color: SlateBlue;
+	background-color:DodgerBlue ;
 }
 
 .type1 {
@@ -79,6 +88,7 @@ p {
     border: 1px solid ;
     line-height: 70px;
     margin: 2px;
+    border-color: gray;
 }
 .type2 {
     width: 50px;
@@ -100,6 +110,7 @@ p {
 	border-width: 1px;
 	padding: 7px;
 	margin:7px 1px;
+	border-color:gray;
 }
 
 #box{
@@ -111,11 +122,11 @@ p {
 	padding: 7px;
 	margin:1px;
 	color:white;
-	font-weight: 100;
+	font-weight:100;
 }
 
 #box2:hover{
-	background-color: SlateBlue;
+	background-color: DodgerBlue ;
 }
 
 hr {
