@@ -68,8 +68,12 @@ p {
 
 .language_box{
 	margin:auto;
+  background-color:white;
 	text-align:center;
 	padding: 4px;	
+  left: 0;
+  right: 0;
+  width:inherit;
 }
 
 .content_box{
@@ -152,6 +156,11 @@ hr {
 .section_title{
 	margin-top:0px;
 	margin-bottom:0px;
+}
+
+.spacer{
+  height:400px;
+  display:none;
 }
 
 .subsection_title{

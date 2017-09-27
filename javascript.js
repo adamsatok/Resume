@@ -1,4 +1,25 @@
 $(document).ready(function () {
+	var highlight;
+
+$(window).scroll(function(){
+//when 158 is reached, make languagebar 
+        if($(document).scrollTop() > 160) {
+          $('.language_box').css( "position", 'fixed');
+          $('.spacer').css( "display", 'block');
+          var newPos = $(document).scrollTop();
+          console.log(newPos);
+          $('.language_box').css( "top", 16);
+
+        }
+
+      else {
+          $('.language_box').css( "position", 'relative');
+          $('.spacer').css( "display", 'none');
+          $('.language_box').css( "top", 0);
+        }
+        })
+
+
 	$(".box2, .circleBase").hover(function(){
 		$(this).css("background-color", "rgba(30,144,255, 1)");
 	}, function(){
@@ -6,44 +27,34 @@ $(document).ready(function () {
 	});
 
 	$(".subsection").hover(function(){
+    var highlightable = true;
+		switch (this.id) {
+		case "Mitre": highlight = Mitre;
+		break;
+		case "Metroland": highlight = Metroland;
+		break;
+		case "BrandSpark": highlight = BrandSpark;
+		break;
+		case "HatetheWait": highlight = HatetheWait;
+		break;
+		case "CubicleCoder": highlight = CubicleCoder;
+		break;
+		case "Education": highlightable = false;
+		break;
+		case "Leadership": highlightable = false;
+		break;
+	}
+    if (highlightable){
 		$(this).css("background-color", "rgba(30,144,255, 0.5)");
+		$(highlight).css("background-color", "rgba(30,144,255, 1)");
+  }
 	}, function(){
+		$(highlight).css("background-color", "#8c8c8c");
 		$(this).css("background-color", "transparent");
 	});
-
-	$("#Mitre").hover(function(){
-		$(Mitre).css("background-color", "rgba(30,144,255, 1)");
-	}, function(){
-		$(Mitre).css("background-color", "#8c8c8c");
-	});
-
-	$("#Metroland").hover(function(){
-		$(Metroland).css("background-color", "rgba(30,144,255, 1)");
-	}, function(){
-		$(Metroland).css("background-color", "#8c8c8c");
-	});
-
-	$("#BrandSpark").hover(function(){
-		$(BrandSpark).css("background-color", "rgba(30,144,255, 1)");
-	}, function(){
-		$(BrandSpark).css("background-color", "#8c8c8c");
-	});
-	$("#HatetheWait").hover(function(){
-		$(HatetheWait).css("background-color", "rgba(30,144,255, 1)");
-	}, function(){
-		$(HatetheWait).css("background-color", "#8c8c8c");
-	});
-	$("#CubicleCoder").hover(function(){
-		$(CubicleCoder).css("background-color", "rgba(30,144,255, 1)");
-	}, function(){
-		$(CubicleCoder).css("background-color", "#8c8c8c");
-	});
-	$("#Education").hover(function(){
-		$(Education).css("background-color", "rgba(30,144,255, 1)");
-	}, function(){
-		$(Education).css("background-color", "#8c8c8c");
-	});
 });
+
+
 
 
 Mitre = "#Ruby, #PHP, #HTML, #CSS, #JS, #SQL, #RubyonRails, #Linux, #MacOS, #Git, #SequelPro, #SublimeText";
@@ -52,3 +63,4 @@ BrandSpark = "#PHP, #HTML, #CSS, #JS, #Git";
 HatetheWait = "#PHP, #HTML, #CSS, #JS, #Git, #MacOS, #Linux, #SublimeText";
 CubicleCoder = "#Java, #HTML, #CSS, #JS, #Git, #MacOS, #Linux, #SublimeText";
 Education = "#C, #MacOS, #Linux, #SublimeText";
+Leadership = "";
