@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	var highlight;
-	$(".box2, .circleBase").hover(function(){
-		$(this).css("background-color", "rgba(30,144,255, 1)");
+	$(".box2").hover(function(){
+		$(this).css("background-color", "rgb(204, 0, 0)");
 	}, function(){
 		$(this).css("background-color", "#8c8c8c");
 	});
@@ -24,18 +24,21 @@ $(document).ready(function () {
 		case "Leadership": highlightable = false;
 		break;
 	}
-    if (highlightable){
-		$(this).css("background-color", "rgba(30,144,255, 0.5)");
-		$(highlight).css("background-color", "rgba(30,144,255, 1)");
+    
+		//$(this).css("margin", "30px 0px");
+		//$(this).find('h5').css("font-size", "24px");
+		$(this).css("border", "4px");
+		if (highlightable){
+			$(highlight).css("background-color", "rgb(204, 0, 0)");
+
   }
 	}, function(){
+		$(this).css("border-width", "0px");
+		$(this).css("margin", "0");
+		$(this).find('h5').css("font-size", "19px");
 		$(highlight).css("background-color", "#8c8c8c");
-		$(this).css("background-color", "transparent");
 	});
 });
-
-
-
 
 Mitre = "#Ruby, #PHP, #HTML, #CSS, #JS, #SQL, #RubyonRails, #Linux, #MacOS, #Git, #SequelPro, #SublimeText";
 Metroland = "#PHP, #HTML, #CSS, #JS, #SQL, #Python, #Yii, #Linux, #MacOS, #Git, #SequelPro, #Selenium, #SublimeText";
