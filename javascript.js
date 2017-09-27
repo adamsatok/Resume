@@ -1,25 +1,5 @@
 $(document).ready(function () {
 	var highlight;
-
-$(window).scroll(function(){
-//when 158 is reached, make languagebar 
-        if($(document).scrollTop() > 160) {
-          $('.language_box').css( "position", 'fixed');
-          $('.spacer').css( "display", 'block');
-          var newPos = $(document).scrollTop();
-          console.log(newPos);
-          $('.language_box').css( "top", 16);
-
-        }
-
-      else {
-          $('.language_box').css( "position", 'relative');
-          $('.spacer').css( "display", 'none');
-          $('.language_box').css( "top", 0);
-        }
-        })
-
-
 	$(".box2, .circleBase").hover(function(){
 		$(this).css("background-color", "rgba(30,144,255, 1)");
 	}, function(){
