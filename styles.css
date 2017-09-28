@@ -8,17 +8,26 @@ body{
 h1 {
 	font-size: 64px;
 	margin:0;
+	color:rgb(204, 0, 0);
 }
 
 h2 {
 	font-size: 24px;
 	margin: -5px 3px -15px;
-	font-weight:100;
+	font-weight:300;
+	color:rgb(204, 0, 0);
+
 }
 
 h3-100 {
 	font-size: 20px;
 	margin:0px;
+}
+
+h3-100-r {
+	font-size: 20px;
+	margin:0px;
+	color:rgb(204, 0, 0);
 }
 
 h3 {
@@ -151,9 +160,10 @@ hr {
 	transition: all 0.3s ease-in-out;
 	padding:0 15px 12px;
 	margin:0;
-	border-width: 0 0 0 3px;
-	border-style: 
-	border-color: rgb(204, 0, 0);
+	border-width: 0 5px 0 0;
+	border-style: solid;
+	border-left-color: rgb(204, 0, 0);
+	border-right-color: white;
 }
 
 .section_title{

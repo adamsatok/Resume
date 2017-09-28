@@ -27,22 +27,21 @@ $(document).ready(function () {
     
 		//$(this).css("margin", "30px 0px");
 		//$(this).find('h5').css("font-size", "24px");
-		$(this).css("border", "4px");
+		$(this).css("border-width", "0 0 0 5px");
 		if (highlightable){
 			$(highlight).css("background-color", "rgb(204, 0, 0)");
 
   }
 	}, function(){
-		$(this).css("border-width", "0px");
+		$(this).css("border-width", "0 5px 0 0");
 		$(this).css("margin", "0");
-		$(this).find('h5').css("font-size", "19px");
 		$(highlight).css("background-color", "#8c8c8c");
 	});
 });
 
-Mitre = "#Ruby, #PHP, #HTML, #CSS, #JS, #SQL, #RubyonRails, #Linux, #MacOS, #Git, #SequelPro, #SublimeText";
+Mitre = "#Ruby, #HTML, #CSS, #JS, #SQL, #RubyonRails, #Linux, #MacOS, #Git, #SequelPro, #SublimeText";
 Metroland = "#PHP, #HTML, #CSS, #JS, #SQL, #Python, #Yii, #Linux, #MacOS, #Git, #SequelPro, #Selenium, #SublimeText";
-BrandSpark = "#PHP, #HTML, #CSS, #JS, #Git";
+BrandSpark = "#PHP, #HTML, #CSS, #JS";
 HatetheWait = "#PHP, #HTML, #CSS, #JS, #Git, #MacOS, #Linux, #SublimeText";
 CubicleCoder = "#Java, #HTML, #CSS, #JS, #Git, #MacOS, #Linux, #SublimeText";
 Education = "#C, #MacOS, #Linux, #SublimeText";
