@@ -8,26 +8,17 @@ body{
 h1 {
 	font-size: 64px;
 	margin:0;
-	color:rgb(204, 0, 0);
 }
 
 h2 {
 	font-size: 24px;
 	margin: -5px 3px -15px;
 	font-weight:300;
-	color:rgb(204, 0, 0);
-
 }
 
 h3-100 {
 	font-size: 20px;
 	margin:0px;
-}
-
-h3-100-r {
-	font-size: 20px;
-	margin:0px;
-	color:rgb(204, 0, 0);
 }
 
 h3 {
@@ -62,6 +53,23 @@ p {
 	line-height: 20px;
 	display:inline-block;
 }
+
+a:link {
+text-decoration: none;
+color:red;
+text-decoration: underline;
+
+}
+
+a:visited {
+text-decoration: none;
+color:inherit;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
 .header_area{
 	width:90%;
 	margin: 30px auto 10px;
@@ -110,6 +118,11 @@ p {
 	float: left;
 }
 
+.align_left:hover{
+  border-bottom: 1px solid;
+  margin-bottom: -4px;
+}
+
 .align_right{
 	float:right;
 }
@@ -117,7 +130,7 @@ p {
 .header_right {
 	text-align: right;
 	right:0;
-	top:2px;
+	top:26px;
 	position:relative;
 }
 
@@ -184,3 +197,5 @@ hr {
 	margin: 0px 20px 0px;
 	clear: both;
 }
+
+
