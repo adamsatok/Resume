@@ -31,7 +31,6 @@ h3 {
 h4 {
 	font-size: 26px;
 	font-weight:400;
-
 }
 
 h5 {
@@ -44,30 +43,20 @@ h6 {
 	transition: font-size 0.3s ease-in-out;
 	font-size: 14px;
 	font-weight:300;
-
-}
-
-p {
-	font-size: 14px;
-	font-weight: 100;
-	line-height: 20px;
-	display:inline-block;
 }
 
 a:link {
-text-decoration: none;
-color:red;
-text-decoration: underline;
-
+	text-decoration: none;
+	color:inherit;
 }
 
 a:visited {
-text-decoration: none;
-color:inherit;
+	text-decoration: none;
+	color:inherit;
 }
 
 a:hover {
-text-decoration: underline;
+	text-decoration: underline;
 }
 
 .header_area{
@@ -105,7 +94,6 @@ text-decoration: underline;
 	margin:auto;
 	font-weight:100;
 	text-align:left;
-
 }
 
 .inline1{
@@ -116,11 +104,6 @@ text-decoration: underline;
 
 .align_left {
 	float: left;
-}
-
-.align_left:hover{
-  border-bottom: 1px solid;
-  margin-bottom: -4px;
 }
 
 .align_right{
@@ -134,25 +117,7 @@ text-decoration: underline;
 	position:relative;
 }
 
-.circleBase {
-	border-radius: 50%;
-	behavior:url(PIE.htc);
-	text-align:center;
-	display:inline-block;
-}
-
-.type1 {
-	width: 70px;
-	height: 70px;
-	border: 1px solid ;
-	line-height: 70px;
-	margin: 2px;
-	border-color: black;
-	color:white;
-	background:#8c8c8c;
-}
-
-.box2{
+.box{
 	transition: background-color 0.3s ease-in-out;
 	display:inline-block;
 	width:90px;
@@ -197,5 +162,3 @@ hr {
 	margin: 0px 20px 0px;
 	clear: both;
 }
-
-

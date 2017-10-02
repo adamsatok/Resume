@@ -1,37 +1,35 @@
 $(document).ready(function () {
 	var highlight;
-	$(".box2").hover(function(){
+	$(".box").hover(function(){
 		$(this).css("background-color", "rgb(204, 0, 0)");
 	}, function(){
 		$(this).css("background-color", "#8c8c8c");
 	});
 
 	$(".subsection").hover(function(){
-    var highlightable = true;
+		var highlightable = true;
 		switch (this.id) {
-		case "Mitre": highlight = Mitre;
-		break;
-		case "Metroland": highlight = Metroland;
-		break;
-		case "BrandSpark": highlight = BrandSpark;
-		break;
-		case "HatetheWait": highlight = HatetheWait;
-		break;
-		case "CubicleCoder": highlight = CubicleCoder;
-		break;
-		case "Education": highlightable = false;
-		break;
-		case "Leadership": highlightable = false;
-		break;
-	}
-    
-		//$(this).css("margin", "30px 0px");
-		//$(this).find('h5').css("font-size", "24px");
+			case "Mitre": highlight = Mitre;
+			break;
+			case "Metroland": highlight = Metroland;
+			break;
+			case "BrandSpark": highlight = BrandSpark;
+			break;
+			case "HatetheWait": highlight = HatetheWait;
+			break;
+			case "CubicleCoder": highlight = CubicleCoder;
+			break;
+			case "Education": highlightable = false;
+			break;
+			case "Leadership": highlightable = false;
+			break;
+		}
+		
 		$(this).css("border-width", "0 0 0 5px");
 		if (highlightable){
 			$(highlight).css("background-color", "rgb(204, 0, 0)");
 
-  }
+		}
 	}, function(){
 		$(this).css("border-width", "0 5px 0 0");
 		$(this).css("margin", "0");
